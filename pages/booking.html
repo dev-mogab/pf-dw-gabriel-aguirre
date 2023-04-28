@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      href="../assets/images/favicon.png"
+      type="image/x-icon"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- Css -->
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>RoadWheels | Book a car</title>
+  </head>
+  <body>
+    <header class="header">
+      <a href="../index.html" class="header__link"
+        ><h1 class="header__title">Road<span>Wheels</span></h1></a
+      >
+      <nav id="links" class="header__nav">
+        <a href="about.html" class="header__link">About</a>
+        <a href="models.html" class="header__link">Car Models</a>
+        <a href="booking.html" class="header__link">Book a ride</a>
+        <a href="contact.html" class="header__link">Contact</a>
+      </nav>
+      <a href="javascript:void(0);" class="header__icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </header>
+    <main class="b-container">
+      <section class="b-container__section">
+        <article class="b-container__article1">
+          <img src="../assets/images/booking.svg" alt="booking image" />
+        </article>
+        <article class="b-container__article2">
+          <h2>Book a ride <span>now</span> !</h2>
+          <form class="b-container__form">
+            <div class="b-container__div">
+              <label for="car">Select Your Car</label>
+              <select name="car" id="car">
+                <option value="#">Select your car</option>
+                <option value="Porsche">Porsche 718</option>
+                <option value="Mercedes">Mercedes Benz C Class</option>
+                <option value="Chevrolet">Chevrolet Trax</option>
+                <option value="Ford">Ford Pick Up Ranger</option>
+              </select>
+            </div>
+            <div class="b-container__div">
+              <label for="location">Select Pick-Up location</label>
+              <select name="location" id="location">
+                <option value="#">Select pick-up location</option>
+                <option value="California">California</option>
+                <option value="Texas">Texas</option>
+                <option value="Florida">Florida</option>
+                <option value="New York">New York</option>
+              </select>
+            </div>
+            <div class="b-container__div">
+              <label for="pick-up">Pick-Up</label>
+              <input type="date" name="pick-up" id="pick-up" min="2023-01-01" />
+            </div>
+            <div class="b-container__div">
+              <label for="drop-off">Drop-Off</label>
+              <input
+                type="date"
+                name="drop-off"
+                id="drop-off"
+                min="2023-01-01"
+              />
+            </div>
+            <input
+              type="submit"
+              value="Book ride"
+              class="button b-container__button--submit"
+            />
+          </form>
+        </article>
+      </section>
+    </main>
+    <hr />
+    <footer class="footer">
+      <section class="footer__section">
+        <article class="footer__article">
+          <div>
+            <h3 class="footer__h3">Subscription</h3>
+            <p>Enter your email and subscribe to our Newsletter.</p>
+            <form>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Enter Email Address"
+                class="footer__input"
+              />
+              <input
+                type="submit"
+                value="Submit"
+                class="button footer__button"
+              />
+            </form>
+          </div>
+          <div>
+            <h3 class="footer__h3">Working hours</h3>
+            <p>Mon - Fri: 8:00AM - 6:00PM</p>
+            <p>Sat: 8:00AM - 13:00PM</p>
+            <p>Sun: Closed</p>
+          </div>
+          <div>
+            <h3 class="footer__h3">Road<span>Wheels</span></h3>
+            <p>
+              Rent your dream car with unbeatable prices, unlimited mileage, and
+              more
+            </p>
+            <img src="../assets/images/phone.png" alt="phone" />
+            <p class="footer__p">(123)-456-789</p>
+            <img src="../assets/images/email.png" alt="mail" />
+            <p class="footer__p">roadwheels@gmail.com</p>
+          </div>
+        </article>
+        <article class="footer__article">
+          <p>Copyright © 2023 Mogab. All rights reserved</p>
+        </article>
+      </section>
+    </footer>
+    <!-- Burger menu script -->
+    <script>
+      function myFunction() {
+        var x = document.getElementById("links");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+    </script>
+  </body>
+</html>

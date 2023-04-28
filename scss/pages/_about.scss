@@ -1,0 +1,17 @@
+.a-container{
+  margin: 50% 0;
+  @include medium{
+    margin: 0;
+    padding: 3% 30%;
+  }
+  & p{
+    &:last-of-type{
+      margin: 0.6rem 0;
+    }
+  }
+  &__button{
+    &--primary{
+      background-color: $bred;
+    }
+  }
+}

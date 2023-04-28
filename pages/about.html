@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      href="../assets/images/favicon.png"
+      type="image/x-icon"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- Css -->
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>RoadWheels | About Us</title>
+  </head>
+  <body>
+    <header class="header">
+      <a href="../index.html" class="header__link"
+        ><h1 class="header__title">Road<span>Wheels</span></h1></a
+      >
+      <nav id="links" class="header__nav">
+        <a href="about.html" class="header__link">About</a>
+        <a href="models.html" class="header__link">Car Models</a>
+        <a href="booking.html" class="header__link">Book a ride</a>
+        <a href="contact.html" class="header__link">Contact</a>
+      </nav>
+      <a href="javascript:void(0);" class="header__icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </header>
+    <main class="a-container">
+      <section class="a-container__section1">
+        <article class="a-container__article">
+          <p>About Us</p>
+          <h2>Why <span>choose</span> us?</h2>
+          <img src="../assets/images/about-us.svg" alt="about us" />
+          <p>
+            At our car rental company, we pride ourselves on providing
+            affordable prices, a vast selection of models, and lightning-fast
+            delivery times. We understand the importance of reliable customer
+            support, which is why we offer 24/7 assistance to ensure a
+            stress-free rental experience. Choose us for your next trip and
+            discover why we're the top choice for car rentals.
+          </p>
+          <a href="booking.html"
+            ><button class="button a-container__button--primary">Book Ride</button></a
+          >
+          <a href="contact.html"
+            ><button class="button a-container__button">Contact Us</button></a
+          >
+        </article>
+      </section>
+    </main>
+    <hr />
+    <footer class="footer">
+      <section class="footer__section">
+        <article class="footer__article">
+          <div>
+            <h3 class="footer__h3">Subscription</h3>
+            <p>Enter your email and subscribe to our Newsletter.</p>
+            <form>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Enter Email Address"
+                class="footer__input"
+              />
+              <input
+                type="submit"
+                value="Submit"
+                class="button footer__button"
+              />
+            </form>
+          </div>
+          <div>
+            <h3 class="footer__h3">Working hours</h3>
+            <p>Mon - Fri: 8:00AM - 6:00PM</p>
+            <p>Sat: 8:00AM - 13:00PM</p>
+            <p>Sun: Closed</p>
+          </div>
+          <div>
+            <h3 class="footer__h3">Road<span>Wheels</span></h3>
+            <p>
+              Rent your dream car with unbeatable prices, unlimited mileage, and
+              more
+            </p>
+            <img src="../assets/images/phone.png" alt="phone" />
+            <p class="footer__p">(123)-456-789</p>
+            <img src="../assets/images/email.png" alt="mail" />
+            <p class="footer__p">roadwheels@gmail.com</p>
+          </div>
+        </article>
+        <article class="footer__article">
+          <p>Copyright © 2023 Mogab. All rights reserved</p>
+        </article>
+      </section>
+    </footer>
+    <!-- Burger menu script -->
+    <script>
+      function myFunction() {
+        var x = document.getElementById("links");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+    </script>
+  </body>
+</html>

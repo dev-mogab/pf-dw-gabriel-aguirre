@@ -1,0 +1,42 @@
+.m-container {
+  @include medium{
+    margin: 3% 0;
+  }
+  &__div{
+    @include medium{
+      display: grid;
+      grid-template-columns: 50% 50%;
+      grid-template-rows: 50% 50%;
+      column-gap: 50px;
+    }
+  }
+  &__div1 {
+    margin: 3.1rem 0;
+    &__p {
+      text-align: start;
+      margin: 0.6rem 0;
+      font-weight: bold;
+    }
+  }
+  &__image{
+    margin: 1rem 0;
+    &--1{
+      width: 100%;
+    }
+    &--2{
+      width: 100%;
+      @include medium{
+        width: 90.4%;
+      }
+    }
+    &--3{
+      width: 100%;
+      @include medium{
+        width: 98%;
+      }
+    }
+    &--4{
+      width: 100%;
+    }
+  }
+}

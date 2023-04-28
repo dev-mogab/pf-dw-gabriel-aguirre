@@ -1,0 +1,119 @@
+.h-container {
+  margin-bottom: 10rem;
+  &__section1 {
+    height: 100vh;
+    padding: 50% 0;
+    @include medium {
+      display: flex;
+      padding: 20% 0;
+    }
+    & article {
+      &:first-of-type {
+        @include medium {
+          width: 50%;
+          margin-right: 10%;
+        }
+      }
+    }
+  }
+  &__p1 {
+    @include p1;
+  }
+  &__p2 {
+    @include p2;
+  }
+  &__button {
+    &--primary {
+      background-color: $bred;
+    }
+    &--secondary {
+      @include medium {
+        width: 50%;
+      }
+    }
+  }
+  &__image {
+    margin: 1.3rem 0;
+    width: 20%;
+    &--porsche {
+      display: none;
+      @include medium {
+        display: block;
+        width: 100%;
+        position: relative;
+        top: 10%;
+      }
+    }
+    &--drive {
+      width: 30%;
+      @include medium {
+        margin-top: 10%;
+        margin-bottom: 0;
+        position: relative;
+        top: -15px;
+      }
+    }
+    &--3c {
+      width: 100%;
+    }
+    &--review {
+      width: 60%;
+    }
+  }
+  &__section2 {
+    & article {
+      @include medium {
+        display: flex;
+      }
+      & div {
+        @include medium {
+          width: 33%;
+          height: auto;
+          margin: 0 20px;
+        }
+      }
+      & p:last-of-type {
+        @include medium {
+          text-align: justify;
+        }
+      }
+    }
+  }
+  &__section3 {
+    margin: 10rem 0;
+    & article {
+      @include large {
+        display: flex;
+      }
+      & div:last-of-type {
+        @include large {
+          width: 50%;
+        }
+      }
+    }
+  }
+  &__div {
+    font-weight: bold;
+    @include medium {
+      display: flex;
+    }
+    @include large{
+      padding: 0 10%;
+    }
+    & div {
+      margin: 40px 0;
+      @include medium {
+        width: 100%;
+        margin-top: 10%;
+        margin-bottom: -10%;
+        text-align: justify;
+        padding: 0 20px;
+      }
+    }
+  }
+  &__section4 {
+    @include large {
+      margin-bottom: 20%;
+    }
+  }
+}
