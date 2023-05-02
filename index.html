@@ -25,6 +25,8 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Css -->
     <link rel="stylesheet" href="css/style.css" />
     <title>RoadWheels</title>
@@ -35,10 +37,10 @@
         ><h1 class="header__title">Road<span>Wheels</span></h1></a
       >
       <nav id="links" class="header__nav">
-        <a href="pages/about.html" class="header__link">About</a>
-        <a href="pages/models.html" class="header__link">Car Models</a>
-        <a href="pages/booking.html" class="header__link">Book a ride</a>
-        <a href="pages/contact.html" class="header__link">Contact</a>
+        <a href="pages/about.html" class="header__link header__link--hover">About</a>
+        <a href="pages/models.html" class="header__link header__link--hover">Car Models</a>
+        <a href="pages/booking.html" class="header__link header__link--hover">Book a ride</a>
+        <a href="pages/contact.html" class="header__link header__link--hover">Contact</a>
       </nav>
       <a href="javascript:void(0);" class="header__icon" onclick="myFunction()">
         <i class="fa fa-bars"></i>
@@ -70,7 +72,7 @@
           />
         </article>
       </section>
-      <section class="h-container__section2">
+      <section data-aos="fade-up" data-aos-duration="1000" class="h-container__section2">
         <p class="h-container__p1">Plan your ride now</p>
         <h2>Quick and easy</h2>
         <article class="h-container__article">
@@ -117,7 +119,7 @@
           </div>
         </article>
       </section>
-      <section class="h-container__section3">
+      <section data-aos="fade-up" data-aos-duration="1000" class="h-container__section3">
         <article class="h-container__article">
           <div>
             <img
@@ -145,7 +147,7 @@
           </div>
         </article>
       </section>
-      <section class="h-container__section4">
+      <section data-aos="fade-up" data-aos-duration="1000" class="h-container__section4">
         <article class="h-container__article">
           <p class="h-container__p1">Reviewed by You</p>
           <h2>Share your thoughts</h2>
@@ -231,6 +233,11 @@
         </article>
       </section>
     </footer>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <!-- Burger menu script -->
     <script>
       function myFunction() {

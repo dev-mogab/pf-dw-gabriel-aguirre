@@ -20,7 +20,7 @@ a {
   text-decoration: none;
 }
 span {
-  color: #ef233c;
+  color: $lred;
 }
 main,
 footer {
@@ -58,6 +58,17 @@ textarea {
   position: relative;
   &__title {
     font-size: 1em;
+  }
+  &__link{
+    &--hover{
+      text-align: center;
+      @include medium{
+        &:hover{
+          transform: scale(110%);
+          transition: all .3s;
+        }
+      }
+    }
   }
   & #links {
     display: none;
@@ -100,6 +111,10 @@ textarea {
     box-shadow: none;
     cursor: pointer;
     width: 100%;
+    &:hover{
+      transform: scale(110%);
+      transition: all .5s;
+    }
   }
   @include large{
     width: 70%;

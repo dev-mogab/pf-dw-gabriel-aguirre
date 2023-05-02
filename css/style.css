@@ -80,6 +80,15 @@ textarea {
 .header__title {
   font-size: 1em;
 }
+.header__link--hover {
+  text-align: center;
+}
+@media (min-width: 1000px) {
+  .header__link--hover:hover {
+    transform: scale(110%);
+    transition: all 0.3s;
+  }
+}
 .header #links {
   display: none;
   background-color: #EDF2F4;
@@ -127,6 +136,10 @@ textarea {
     box-shadow: none;
     cursor: pointer;
     width: 100%;
+  }
+  .button:hover {
+    transform: scale(110%);
+    transition: all 0.5s;
   }
 }
 @media (min-width: 1500px) {
