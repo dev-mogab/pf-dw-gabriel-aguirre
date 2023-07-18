@@ -1,4 +1,4 @@
 # Proyecto Final DesarrolloWeb Coderhouse
 
 ## About
-Prototipo visual sobre una pagina de renta de autos realizado en el curso de DesarrolloWeb en CoderHouse.
+Landing Page full responsive sobre una pagina que se dedica a la renta de automotores.
